@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Cardápio de Natal – Cozinha de Helena (visão no celular)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  html,body{margin:0;height:100%;background:#16181d;overflow:hidden}
+  body{display:flex;align-items:center;justify-content:center}
+  .escala{width:440px;height:900px;transform-origin:center center;flex:none}
+  .celular{position:relative;width:410px;height:870px;margin:15px 15px;border-radius:64px;background:#0b0b0d;
+    padding:12px;box-sizing:border-box;box-shadow:0 0 0 3px #3a3d44,0 0 0 6px #1d1f24,0 30px 80px rgba(0,0,0,.6)}
+  .celular::before,.celular::after{content:"";position:absolute;width:4px;background:#3a3d44;border-radius:2px}
+  .celular::before{left:-8px;top:170px;height:60px;box-shadow:0 80px 0 #3a3d44}
+  .celular::after{right:-8px;top:200px;height:90px}
+  .tela{position:relative;width:100%;height:100%;border-radius:52px;overflow:hidden;background:#fff}
+  .tela{background:#002617}
+  .ilha{position:absolute;z-index:3;top:11px;left:50%;transform:translateX(-50%);width:118px;height:34px;border-radius:20px;background:#000}
+  iframe{position:absolute;left:0;right:0;bottom:0;top:46px;width:100%;height:calc(100% - 46px);border:0;background:#fff}
+  .barra{position:absolute;z-index:3;bottom:8px;left:50%;transform:translateX(-50%);width:130px;height:5px;border-radius:3px;background:rgba(255,255,255,.85);mix-blend-mode:difference}
+</style>
+</head>
+<body>
+<div class="escala" id="escala">
+  <div class="celular">
+    <div class="tela">
+      <div class="ilha"></div>
+      <iframe src="https://analaurataveira.github.io/cardapio-natal-cozinha-helena/" title="Cardápio de Natal"></iframe>
+      <div class="barra"></div>
+    </div>
+  </div>
+</div>
+<script>
+  function ajustar(){
+    var e=document.getElementById('escala');
+    var s=Math.min(window.innerHeight/900, window.innerWidth/440);
+    e.style.transform='scale('+s+')';
+  }
+  addEventListener('resize',ajustar); ajustar();
+</script>
+</body>
+</html>
