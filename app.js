@@ -19,7 +19,7 @@
       rotulo: 'Sabores · um ou os dois', padrao: ['ninho', 'brigadeiro'],
       opcoes: [{ id: 'ninho', nome: 'Ninho' }, { id: 'brigadeiro', nome: 'Brigadeiro' }] },
     { id: 'salpicao', tipo: 'quilo', foto: 'salpicao.jpg', titulo: 'Salpicão', sub: 'R$ 80,00 por quilo', preco: 80 },
-    { id: 'caixa-doces', tipo: 'exato', foto: 'caixa-doces.jpg', titulo: 'Caixa com 20 doces natalinos',
+    { id: 'caixa-doces', tipo: 'exato', foto: 'caixa-doces.jpg?v=2', titulo: 'Caixa com 20 doces natalinos',
       sub: 'Personalizados · 20 unidades', preco: 50, exatos: 2, rotulo: 'Escolha exatamente 2 sabores',
       padrao: ['brigadeiro', 'ninho'],
       opcoes: [{ id: 'brigadeiro', nome: 'Brigadeiro' }, { id: 'ninho', nome: 'Ninho' }, { id: 'surpresa', nome: 'Surpresa de uva' }] },
